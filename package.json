@@ -1,0 +1,31 @@
+{
+  "name": "dynvar",
+  "version": "1.0.0",
+  "description": "Dynamic variable support for JS",
+  "main": "dist/",
+  "scripts": {
+    "build": "babel index.js --out-dir dist --source-map",
+    "prepublish": "npm run build",
+    "test": "standard index.js && npm run build && tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zkat/dynvar.git"
+  },
+  "keywords": [
+    "dynamic-variable",
+    "lisp",
+    "scope"
+  ],
+  "author": "Kat Marchán <kzm@sykosomatic.org>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/zkat/dynvar/issues"
+  },
+  "homepage": "https://github.com/zkat/dynvar#readme",
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "standard": "^4.5.4",
+    "tap": "^1.3.1"
+  }
+}
